@@ -35,10 +35,10 @@
                 </form>
                 <p class="menu-section">
                 </p>
-                <ul>
+                <ul class="nav nav-pills nav-stacked">
                     {% for itemId, item in menu.items %}
-                        <li class="toctree-l1 {{ itemId == currentMenu ? 'current' }}">
-                            <a class="reference internal {{ itemId == currentMenu ? 'current' }}"
+                        <li class="navitems {{ itemId == currentMenu ? 'active' }}">
+                            <a 
                                href="{{ item.absoluteUrl|default(baseUrl ~ '/' ~ item.relativeUrl) }}">
                                 {{ item.text|raw }}
                             </a>
