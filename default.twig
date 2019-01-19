@@ -28,10 +28,11 @@
             <div class="wy-side-nav-search">
                 <a href="{{ baseUrl }}/" class="fa fa-home"> {{ title|default('The title') }}</a>
             </div>
+            <div>
             <form action="search.html">
             <input type="text" name="q" id="tipue_search_input" autocomplete="off" required>
             </form>
-            <div id="tipue_search_content"></div>
+            </div>
             <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
                 <ul>
                     {% for itemId, item in menu.items %}
